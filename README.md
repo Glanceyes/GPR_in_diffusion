@@ -1,10 +1,12 @@
-**# [KAIST AI503 Project] Gaussian Process Regression in Diffusion Models for Time Series Data**
+# [KAIST AI503 Project] Gaussian Process Regression in Diffusion Models for Time Series Data
+
+<br/>
 
 In this project, we explore how to incorporate ***\*Gaussian Process Regression (GPR)\**** into a ***\*Diffusion Model\**** for one-dimensional time series data. The general idea is as follows:
 
 <br/>
 
-1. ***\*Diffusion Model Setup\****:  
+1. **Diffusion Model Setup**
 
    We start with a diffusion model that progressively adds noise to the data through a forward noising process. Formally, if we denote the original data as $x_0$, at each diffusion step $t$ we obtain:
 $$
@@ -16,7 +18,7 @@ $$
 
 <br/>
 
-2. ***\*Gaussian Process Regression (GPR) as an Energy Function\****:  
+2. **Gaussian Process Regression (GPR) as an Energy Function**
 
    GPR will be employed to guide the diffusion reverse process. The GPR model provides a predictive mean and variance, which can be interpreted as an energy landscape:
 $$
@@ -28,6 +30,6 @@ $$
 
 <br/>
 
-3. ***\*Time Series Application\****:  
+3. **Time Series Application**
 
    We focus on a real-world time series dataset - PM2.5 measurement. After applying the diffusion model to denoise the data, we use GPR to guide the denoising trajectory. We will also compare scenarios with and without GPR guidance, and even introduce Stein Variational Gradient Descent (SVGD) steps to refine the final samples.
