@@ -1,4 +1,4 @@
-# [AI503 Project] Gaussian Process Regression in Diffusion Models for Time Series Data
+# [KAIST AI503 Project] Gaussian Process Regression in Diffusion Models for Time Series Data
 
 In this project, we explore how to incorporate **Gaussian Process Regression (GPR)** into a **Diffusion Model** for one-dimensional time series data. The general idea is as follows:
 
