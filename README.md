@@ -2,7 +2,9 @@
 
 In this project, we explore how to incorporate **Gaussian Process Regression (GPR)** into a **Diffusion Model** for one-dimensional time series data. The general idea is as follows:
 
+
 <br/>
+<img width="1017" alt="gpr_in_diffusion" src="https://github.com/user-attachments/assets/b571c0b2-a7a3-49f7-8ae8-6611b38aea76" />
 
 1. **Diffusion Model Setup**:  
    We start with a diffusion model that progressively adds noise to the data through a forward noising process. Formally, if we denote the original data as $x_0$, at each diffusion step $t$ we obtain:
@@ -39,6 +41,7 @@ In this project, we explore how to incorporate **Gaussian Process Regression (GP
 
 - **Beijing PM2.5 Dataset**: Hourly air quality measurements (PM2.5) from Beijing.
 - A subset of 2000 time points is used for training and testing.
+- [Beijing PM 2.5 download link](https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data)
 
 <br/>
 
